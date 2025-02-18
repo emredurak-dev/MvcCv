@@ -1,0 +1,44 @@
+﻿@model MvcCv.Models.Entity.TblEgitim
+
+@{
+    ViewBag.Title = "EgitimDuzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h1>Egitim Duzenleme Sayfasi</h1>
+<br />
+<form class="form-group" method="post">
+
+
+    @Html.Label("Okul")
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Baslik, "", new { @style = "color:red" })
+    <br />
+
+    @Html.Label("Fakulte")
+    @Html.TextBoxFor(x => x.AltBaslik1, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.AltBaslik1, "", new { @style = "color:red" })
+
+    <br />
+
+    @Html.Label("Bolum")
+    @Html.TextBoxFor(x => x.AltBaslik2, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.AltBaslik2, "", new { @style = "color:red" })
+
+    <br />
+
+    @Html.Label("GNO")
+    @Html.TextBoxFor(x => x.GNO, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.GNO, "", new { @style = "color:red" })
+
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.Tarih, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.Tarih, "", new { @style = "color:red" })
+
+    <br />
+
+    <button class="btn btn-info">Guncelle</button>
+</form>
