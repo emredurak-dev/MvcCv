@@ -12,7 +12,6 @@ The contact panel allows visitors to send messages to the website.
 - **Entity Framework**
 - **SQL Server**
 - **Bootstrap**
-- **Authorization**
 
 ## Screenshot 📸
 
